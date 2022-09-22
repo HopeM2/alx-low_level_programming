@@ -3,20 +3,19 @@
 /**
  * print_alphabet - function to print
  *
- * Return: Always 0
+ * Return: 0
  */
 
-Void print_alphabet(void)
+void print_alphabet(void)
 {
-	char ch = 'a';
+	int i;
 
-	while (ch <= 'z')
+	for (i = 'a' ; i <= 'z'; i++)
+
 	{
-		putchar(ch);
-		++ch;
-
+		_putchar(i);
 	}
-	putchar('\n');
 
-	return (0);
+	_putchar('\n');
+
 }
